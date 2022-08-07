@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="martes">Viernes</string>
+    <string name="fecha">15 de julio</string>
+    <string name="boton">Terminar Jornada</string>
+</resources>
