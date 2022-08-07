@@ -3,4 +3,9 @@
     <string name="martes">Viernes</string>
     <string name="fecha">15 de julio</string>
     <string name="boton">Terminar Jornada</string>
+    <string name="nomplaza">Café mimi</string>
+    <string name="lugar">14 calle 7-85 zona 10 Guatemala City, 01010</string>
+    <string name="time">8:00 AM 7:00 PM</string>
+    <string name="inicio">Iniciar</string>
+    <string name="Det">Detalles</string>
 </resources>
