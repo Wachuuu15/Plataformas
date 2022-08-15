@@ -24,17 +24,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="134dp"
-        android:layout_height="172dp"
+        android:layout_width="574dp"
+        android:layout_height="465dp"
         android:layout_marginTop="147dp"
         android:layout_marginBottom="86dp"
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404"
+        app:layout_constraintVertical_bias="0.388"
         app:srcCompat="@drawable/rectangulo__1_"
         tools:ignore="ImageContrastCheck" />
 
