@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
@@ -18,13 +19,25 @@ class MainActivity2 : AppCompatActivity() {
     private lateinit var buttoncamera : Button
     private lateinit var buttonCall : Button
     private lateinit var rootLayout: ConstraintLayout
+    private lateinit var titulo : TextView
+    private lateinit var textdirection : TextView
+    private lateinit var hor : TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-
         buttoncamera = findViewById(R.id.button4)
         buttonCall = findViewById(R.id.button5)
+        titulo = findViewById(R.id.textView9)
+        textdirection =findViewById(R.id.textView10)
+        hor = findViewById(R.id.textView12)
+
+        val dato : datos = intent.getSerializableExtra("EXTRA_DATO") as datos
+        titulo.text = dato.titulo
+        textdirection.text = dato.direccion
+        hor.text = dato.hora
+
         setListeners()
     }
 

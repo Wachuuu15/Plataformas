@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 
 
@@ -14,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var detalles: Button
     private lateinit var download: Button
     private lateinit var direction : ImageView
+    private lateinit var titulo : TextView
+    private lateinit var textdirection : TextView
+    private lateinit var hor : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         detalles = findViewById(R.id.button3)
         direction = findViewById(R.id.imageView4)
         download = findViewById(R.id.button2)
+        titulo = findViewById(R.id.textView3)
+        textdirection =findViewById(R.id.textView4)
+        hor = findViewById(R.id.textView5)
+
         initListeners()
 
     }
@@ -32,7 +40,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         detalles.setOnClickListener {
-            startActivity(Intent(this, MainActivity2::class.java))
+
+            val titulo = titulo.text.toString()
+            val direction = textdirection.text.toString()
+            val hora = hor.text.toString()
+            val dato = datos(titulo, direction, hora)
+
+            val intent = Intent(this, MainActivity2::class.java)
+
+            intent.putExtra("EXTRA_DATO", dato)
+            startActivity(intent)
+
         }
 
         download.setOnClickListener{
