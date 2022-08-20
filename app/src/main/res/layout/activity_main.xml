@@ -50,15 +50,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="419dp"
-        android:layout_height="122dp"
+        android:layout_width="346dp"
+        android:layout_height="85dp"
         android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
+        app:layout_constraintVertical_bias="0.044"
         app:srcCompat="@drawable/img"
         tools:ignore="ImageContrastCheck" />
 
@@ -161,13 +161,13 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#C8DCEC"
         android:text="@string/download"
         android:textColor="#3A4FC1"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
